@@ -1,0 +1,14 @@
+{
+  "id": "msg_02",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "text",
+      "text": "Here is the plan."
+    }
+  ],
+  "model": "claude-sonnet-4-6",
+  "stop_reason": "end_turn",
+  "usage": {"input_tokens": 30, "output_tokens": 15}
+}
