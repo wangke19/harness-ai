@@ -1,0 +1,32 @@
+server:
+  poll_interval: 60s
+  worker_count: 3
+  db_path: ./harness.db
+
+agents:
+  planner:
+    backend: claude
+    model: claude-sonnet-4-6
+  executor:
+    backend: claude
+    model: claude-sonnet-4-5
+  reviewer:
+    backend: claude
+    model: claude-opus-4-6
+
+watch:
+  github:
+    repo: owner/repo
+    label: harness-ready
+  jira:
+    project: PROJ
+    status: "Ready for Dev"
+
+executor:
+  max_retries: 3
+  command_timeout: 10m
+  allowed_commands:
+    - go
+    - make
+    - golangci-lint
+    - git
