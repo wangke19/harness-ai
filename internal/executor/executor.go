@@ -61,7 +61,7 @@ func (e *Executor) Execute(ctx context.Context, task *store.Task) error {
 			return agent.ErrRetryable{Reason: fmt.Sprintf("tool %s error: %v", call.Name, callErr)}
 		}
 		if call.Name == "create_pr" {
-			fmt.Sscanf(result, "%d", &prNumber)
+			_, _ = fmt.Sscanf(result, "%d", &prNumber)
 		}
 	}
 

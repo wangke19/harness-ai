@@ -42,7 +42,7 @@ func (n *GitHubNotifier) NotifyFailed(ctx context.Context, task *store.Task, err
 
 func (n *GitHubNotifier) commentOnIssue(ctx context.Context, task *store.Task, body string) error {
 	var issueNum int
-	fmt.Sscanf(task.IssueURL[strings.LastIndex(task.IssueURL, "/")+1:], "%d", &issueNum)
+	_, _ = fmt.Sscanf(task.IssueURL[strings.LastIndex(task.IssueURL, "/")+1:], "%d", &issueNum)
 	if issueNum == 0 {
 		return fmt.Errorf("could not parse issue number from %q", task.IssueURL)
 	}

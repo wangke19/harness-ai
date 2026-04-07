@@ -19,7 +19,7 @@ func (m *mockSource) FetchNew(ctx context.Context, since time.Time) ([]watcher.I
 
 func TestWatcher_EmitsNewIssues(t *testing.T) {
 	s, _ := store.New(":memory:")
-	defer s.Close()
+	defer func() { _ = s.Close() }()
 
 	src := &mockSource{issues: []watcher.Issue{
 		{ID: "gh-1", URL: "https://github.com/owner/repo/issues/1", Title: "Fix bug", Source: "github"},
@@ -45,7 +45,7 @@ func TestWatcher_EmitsNewIssues(t *testing.T) {
 
 func TestWatcher_DeduplicatesSeenIssues(t *testing.T) {
 	s, _ := store.New(":memory:")
-	defer s.Close()
+	defer func() { _ = s.Close() }()
 
 	src := &mockSource{issues: []watcher.Issue{
 		{ID: "gh-2", URL: "https://github.com/owner/repo/issues/2", Title: "Dup", Source: "github"},

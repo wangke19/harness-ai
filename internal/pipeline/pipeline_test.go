@@ -19,7 +19,7 @@ func (h *noopHandler) Handle(ctx context.Context, task *store.Task) error {
 
 func TestPipeline_ProcessesEvent(t *testing.T) {
 	s, _ := store.New(":memory:")
-	defer s.Close()
+	defer func() { _ = s.Close() }()
 
 	handler := &noopHandler{called: make(chan string, 1)}
 	events := make(chan watcher.IssueEvent, 1)

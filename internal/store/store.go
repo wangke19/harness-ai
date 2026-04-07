@@ -116,7 +116,7 @@ func (s *Store) ListActiveTasks(ctx context.Context) ([]*Task, error) {
 	if err != nil {
 		return nil, err
 	}
-	defer rows.Close()
+	defer func() { _ = rows.Close() }()
 	var tasks []*Task
 	for rows.Next() {
 		t, err := scanTask(rows)

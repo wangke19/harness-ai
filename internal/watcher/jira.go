@@ -45,7 +45,7 @@ func (j *JiraSource) FetchNew(ctx context.Context, since time.Time) ([]Issue, er
 	if err != nil {
 		return nil, err
 	}
-	defer resp.Body.Close()
+	defer func() { _ = resp.Body.Close() }()
 
 	var result struct {
 		Issues []struct {
