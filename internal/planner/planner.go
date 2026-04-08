@@ -7,8 +7,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/wangke19/harness-system/internal/agent"
-	"github.com/wangke19/harness-system/internal/store"
+	"github.com/wangke19/harness-ai/internal/agent"
+	"github.com/wangke19/harness-ai/internal/store"
 )
 
 // Planner runs the planning agent loop: issue body → exec plan markdown.

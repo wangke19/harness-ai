@@ -1,4 +1,4 @@
-module github.com/wangke19/harness-system
+module github.com/wangke19/harness-ai
 
 go 1.25.7
 

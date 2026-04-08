@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/wangke19/harness-system/internal/agent"
-	"github.com/wangke19/harness-system/internal/executor"
-	"github.com/wangke19/harness-system/internal/store"
+	"github.com/wangke19/harness-ai/internal/agent"
+	"github.com/wangke19/harness-ai/internal/executor"
+	"github.com/wangke19/harness-ai/internal/store"
 )
 
 type mockAgent struct{ text string }

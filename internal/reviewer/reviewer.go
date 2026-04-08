@@ -6,8 +6,8 @@ import (
 	"strings"
 
 	"github.com/google/go-github/v60/github"
-	"github.com/wangke19/harness-system/internal/agent"
-	"github.com/wangke19/harness-system/internal/store"
+	"github.com/wangke19/harness-ai/internal/agent"
+	"github.com/wangke19/harness-ai/internal/store"
 )
 
 type Decision string

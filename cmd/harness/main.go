@@ -9,16 +9,16 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/wangke19/harness-system/config"
-	"github.com/wangke19/harness-system/internal/agent"
-	"github.com/wangke19/harness-system/internal/executor"
-	"github.com/wangke19/harness-system/internal/merger"
-	"github.com/wangke19/harness-system/internal/notifier"
-	"github.com/wangke19/harness-system/internal/pipeline"
-	"github.com/wangke19/harness-system/internal/planner"
-	"github.com/wangke19/harness-system/internal/reviewer"
-	"github.com/wangke19/harness-system/internal/store"
-	"github.com/wangke19/harness-system/internal/watcher"
+	"github.com/wangke19/harness-ai/config"
+	"github.com/wangke19/harness-ai/internal/agent"
+	"github.com/wangke19/harness-ai/internal/executor"
+	"github.com/wangke19/harness-ai/internal/merger"
+	"github.com/wangke19/harness-ai/internal/notifier"
+	"github.com/wangke19/harness-ai/internal/pipeline"
+	"github.com/wangke19/harness-ai/internal/planner"
+	"github.com/wangke19/harness-ai/internal/reviewer"
+	"github.com/wangke19/harness-ai/internal/store"
+	"github.com/wangke19/harness-ai/internal/watcher"
 )
 
 func main() {

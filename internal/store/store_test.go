@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/wangke19/harness-system/internal/store"
+	"github.com/wangke19/harness-ai/internal/store"
 )
 
 func newTestStore(t *testing.T) *store.Store {

@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/wangke19/harness-system/internal/store"
-	"github.com/wangke19/harness-system/internal/watcher"
+	"github.com/wangke19/harness-ai/internal/store"
+	"github.com/wangke19/harness-ai/internal/watcher"
 )
 
 // Handler processes a single task. Implemented by the orchestrator that

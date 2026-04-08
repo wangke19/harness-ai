@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/wangke19/harness-system/internal/store"
-	"github.com/wangke19/harness-system/internal/watcher"
+	"github.com/wangke19/harness-ai/internal/store"
+	"github.com/wangke19/harness-ai/internal/watcher"
 )
 
 type mockSource struct {

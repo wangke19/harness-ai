@@ -7,8 +7,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/wangke19/harness-system/internal/agent"
-	"github.com/wangke19/harness-system/internal/store"
+	"github.com/wangke19/harness-ai/internal/agent"
+	"github.com/wangke19/harness-ai/internal/store"
 )
 
 // Executor runs the executor agent loop: plan → code → PR.

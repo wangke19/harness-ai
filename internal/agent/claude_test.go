@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	"github.com/anthropics/anthropic-sdk-go/option"
-	"github.com/wangke19/harness-system/internal/agent"
+	"github.com/wangke19/harness-ai/internal/agent"
 )
 
 func TestClaudeCompleteWithTools_ToolLoop(t *testing.T) {
